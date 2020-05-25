@@ -1,0 +1,818 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  background-color: #560027!important;
+  position: sticky!important;
+  top:0!important;
+  z-index: 1;
+}
+.navbar-toggler{
+  color: white;
+}
+.nav-link{
+  color:white !important;
+  margin-left: 10px;
+}
+.nav-link:hover{
+  color: #F72020!important;
+}
+.nav-link:active{
+  color: #F72020!important;
+}
+
+.navbar-brand{
+ margin-left: 100px;
+}
+.navbar-toggler{
+  background-color: white !important;
+}
+.imag{
+  width: 100%;
+  height: 85vh !important;
+}
+.image1{
+  background-image: url('../images/mens/pic6.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y:top ;
+  width: 100% !important;
+  height: 400px;
+  margin-top: 50px;
+  color: white !important;
+}
+
+
+.image2{
+  background-image: url('../images/womens/pic12.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x:left;
+  width: 100% !important;
+  height: 400px;
+  margin-top: 50px;
+  color: white !important;
+  /* margin-left: 60px; */
+  
+}
+.image3{
+  background-image: url('../images/watches/watch6.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%!important;
+  height: 300px;
+  margin-top: 20px;
+  color: white !important;
+  
+}
+.image4{
+  background-image: url('../images/shoes/shoes\ cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%!important;
+  height: 300px;
+  margin-top: 20px;
+  color: white !important;
+ 
+}
+.image5{
+  background-image: url('../images/begs/beg\ cover.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y:top ;
+  width: 100%!important;
+  height: 300px;
+  margin-top: 20px;
+  color: white !important;
+  
+}
+.pro{
+   padding: 10px !important
+}
+.pro h1 , h4{
+   padding-left: 20px;
+}
+.pro a{
+    text-decoration: none;
+}
+.pro a:hover h1 , .pro a:hover h4{
+  color: #F72020 !important;
+}
+.allpro a{
+   margin-right: 20px;
+   text-decoration: none;
+   color: black;
+   font-size: 18px;
+}
+.allpro a:hover {
+  color: #F72020;
+  text-decoration: underline;
+}
+.pro-img1{
+    background-image: url('../images/mens/shirt1.jpg');
+    
+}
+.pro-img2{
+    background-image: url('../images/womens/pic1.jpg');
+    
+}
+.pro-img3{
+    background-image: url('../images/watches/watch1.jpg');
+    
+}
+.pro-img4{
+    background-image: url('../images/shoes/shoes1.jpg'); 
+   
+}
+.pro-img5{
+    background-image: url('../images/begs/beg1.jpg');
+    
+}
+.pro-img6{
+    background-image: url('../images/mens/pic2.jpg');
+    
+}
+.pro-img7{
+    background-image: url('../images/womens/pic2.jpg');
+    
+}
+.pro-img8{
+    background-image: url('../images/watches/watch2.jpg');
+    
+}
+.pro-img9{
+    background-image: url('../images/shoes/shoes2.jpg');
+   
+}
+.pro-img10{
+    background-image: url('../images/begs/beg2.jpg');
+    
+}
+.pro-img11{
+    background-image: url('../images/mens/pic3.jpg');
+   
+}
+.pro-img12{
+    background-image: url('../images/begs/beg3.jpg');
+   
+}
+.pro-img1 , .pro-img2 , .pro-img3 , .pro-img4 , .pro-img5 , .pro-img6 , .pro-img7 , .pro-img8 , .pro-img9 , .pro-img10 , .pro-img11 , .pro-img12{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y:top ;
+    height: 400px;
+    border: 1px solid gray;
+    text-align: center;
+    transition-duration: 2s;
+}
+.pro-img1:hover , .pro-img2:hover  , .pro-img3:hover , .pro-img4:hover , .pro-img5:hover , .pro-img6:hover , .pro-img7:hover , .pro-img8:hover 
+ , .pro-img9:hover , .pro-img10:hover , .pro-img11:hover , .pro-img12:hover{
+   transform: scale(1.05);
+}
+
+.btn1{
+     margin-top: 340px;
+     background-color: #560027;
+     color: white;
+     border-radius: 40px;
+     padding: 10px 20px;
+     
+}
+.btn1:hover{
+  background-color:white;
+  color:#F72020 ;
+}
+.mpro-img2{
+  background-image: url('../images/mens/pic2.jpg');
+  
+}
+.mpro-img3{
+  background-image: url('../images/mens/pic3.jpg');
+  
+}
+.mpro-img4{
+  background-image: url('../images/mens/pic4.jpg'); 
+ 
+}
+.mpro-img5{
+  background-image: url('../images/mens/pic5.jpg');
+  
+}
+.mpro-img6{
+  background-image: url('../images/mens/pic6.jpg');
+  
+}
+.mpro-img7{
+  background-image: url('../images/mens/pic7.jpg');
+  
+}
+.mpro-img8{
+  background-image: url('../images/mens/pic8.jpg');
+  
+}
+.mpro-img9{
+  background-image: url('../images/mens/pic9.jpg');
+ 
+}
+.mpro-img10{
+  background-image: url('../images/mens/pic10.jpg');
+  
+}
+.mpro-img11{
+  background-image: url('../images/mens/pic11.jpg');
+ 
+}
+.mpro-img12{
+  background-image: url('../images/mens/pic12.jpg');
+ 
+}
+.mpro-img2 , .mpro-img3 , .mpro-img4 , .mpro-img5 , .mpro-img6 , .mpro-img7 , .mpro-img8 , .mpro-img9 , .mpro-img10 , .mpro-img11 , .mpro-img12{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y:top ;
+  height: 400px;
+  border: 1px solid gray;
+  text-align: center;
+  transition-duration: 2s;
+}
+.mpro-img2:hover  , .mpro-img3:hover , .mpro-img4:hover , .mpro-img5:hover , .mpro-img6:hover , .mpro-img7:hover , .mpro-img8:hover 
+, .mpro-img9:hover , .mpro-img10:hover , .mpro-img11:hover , .mpro-img12:hover{
+ transform: scale(1.05);
+}
+
+.wpro-img1{
+  background-image: url('../images/womens/pic1.jpg');
+  
+}
+.wpro-img2{
+  background-image: url('../images/womens/pic2.jpg');
+  
+}
+.wpro-img3{
+  background-image: url('../images/womens/pic3.jpg');
+  
+}
+.wpro-img4{
+  background-image: url('../images/womens/pic4.jpg'); 
+ 
+}
+.wpro-img5{
+  background-image: url('../images/womens/pic05.jpg');
+  
+}
+.wpro-img6{
+  background-image: url('../images/womens/pic6.jpg');
+  
+}
+.wpro-img7{
+  background-image: url('../images/womens/pic7.jpeg');
+  
+}
+.wpro-img8{
+  background-image: url('../images/womens/pic13.jpg');
+  
+}
+.wpro-img9{
+  background-image: url('../images/womens/pic02.jpg');
+ 
+}
+.wpro-img10{
+  background-image: url('../images/womens/pic10.jpg');
+  
+}
+.wpro-img11{
+  background-image: url('../images/womens/pic03.jpg');
+ 
+}
+.wpro-img12{
+  background-image: url('../images/womens/pic01.jpg');
+ 
+}
+ .wpro-img1 , .wpro-img2 , .wpro-img3 , .wpro-img4 , .wpro-img5 , .wpro-img6 , .wpro-img7 , .wpro-img8 , .wpro-img9 , .wpro-img10 , .wpro-img11 , .wpro-img12{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y:top ;
+  height: 400px;
+  border: 1px solid gray;
+  text-align: center;
+  transition-duration: 2s;
+}
+.wpro-img2:hover  , .wpro-img3:hover , .wpro-img4:hover , .wpro-img5:hover , .wpro-img6:hover , .wpro-img7:hover , .wpro-img8:hover 
+, .wpro-img9:hover , .wpro-img10:hover , .wpro-img11:hover , .wpro-img12:hover{
+ transform: scale(1.05);
+}
+.wtpro-img1{
+  background-image: url('../images/watches/watch1.jpg');
+  
+}
+.wtpro-img2{
+  background-image: url('../images/watches/watch2.jpg');
+  
+}
+.wtpro-img3{
+  background-image: url('../images/watches/watch3.jpg');
+  
+}
+.wtpro-img4{
+  background-image: url('../images/watches/watch4.jpg'); 
+ 
+}
+.wtpro-img5{
+  background-image: url('../images/watches/watch5.jpg');
+  
+}
+.wtpro-img6{
+  background-image: url('../images/watches/watch6.jpg');
+  
+}
+.wtpro-img7{
+  background-image: url('../images/watches/watch7.jpg');
+  
+}
+.wtpro-img8{
+  background-image: url('../images/watches/watch8.jpg');
+  
+}
+.wtpro-img9{
+  background-image: url('../images/watches/watch9.jpg');
+ 
+}
+.wtpro-img10{
+  background-image: url('../images/watches/watch10.jpg');
+  
+}
+.wtpro-img11{
+  background-image: url('../images/watches/watch11.jpg');
+ 
+}
+.wtpro-img12{
+  background-image: url('../images/watches/watch12.jpg');
+ 
+}
+ .wtpro-img1 , .wtpro-img2 , .wtpro-img3 , .wtpro-img4 , .wtpro-img5 , .wtpro-img6 , .wtpro-img7 , .wtpro-img8 
+ , .wtpro-img9 , .wtpro-img10 , .wtpro-img11 , .wtpro-img12{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y:top ;
+  height: 400px;
+  border: 1px solid gray;
+  text-align: center;
+  transition-duration: 2s;
+}
+.wtpro-img1:hover , .wtpro-img2:hover  , .wtpro-img3:hover , .wtpro-img4:hover , .wtpro-img5:hover , .wtpro-img6:hover , .wtpro-img7:hover
+ , .wtpro-img8:hover 
+, .wtpro-img9:hover , .wtpro-img10:hover , .wtpro-img11:hover , .wtpro-img12:hover{
+ transform: scale(1.05);
+}
+.spro-img1{
+  background-image: url('../images/shoes/shoes1.jpg');
+  
+}
+.spro-img2{
+  background-image: url('../images/shoes/shoes2.jpg');
+  
+}
+.spro-img3{
+  background-image: url('../images/shoes/shoes\ cover.jpg');
+  
+}
+.spro-img4{
+  background-image: url('../images/shoes/shoes4.jpg'); 
+ 
+}
+.spro-img5{
+  background-image: url('../images/shoes/shoes5.jpg');
+  
+}
+.spro-img6{
+  background-image: url('../images/shoes/shoes13.jpg');
+  
+}
+.spro-img7{
+  background-image: url('../images/shoes/shoes7.jpg');
+  
+}
+.spro-img8{
+  background-image: url('../images/shoes/shoes8.jpg');
+  
+}
+.spro-img9{
+  background-image: url('../images/shoes/shoes9.jpg');
+ 
+}
+.spro-img10{
+  background-image: url('../images/shoes/shoes10.jpg');
+  
+}
+.spro-img11{
+  background-image: url('../images/shoes/shoes11.jpg');
+ 
+}
+.spro-img12{
+  background-image: url('../images/shoes/shoes12.jpg');
+ 
+}
+ .spro-img1 , .spro-img2 , .spro-img3 , .spro-img4 , .spro-img5 , .spro-img6 , .spro-img7 , .spro-img8 
+ , .spro-img9 , .spro-img10 , .spro-img11 , .spro-img12{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  border: 1px solid gray;
+  text-align: center;
+  transition-duration: 2s;
+}
+.spro-img1:hover  , .spro-img2:hover  , .spro-img3:hover , .spro-img4:hover , .spro-img5:hover , .spro-img6:hover , .spro-img7:hover
+ , .spro-img8:hover 
+, .spro-img9:hover , .spro-img10:hover , .spro-img11:hover , .spro-img12:hover{
+ transform: scale(1.05);
+}
+.bpro-img1{
+  background-image: url('../images/begs/beg1.jpg');
+  
+}
+.bpro-img2{
+  background-image: url('../images/begs/beg2.jpg');
+  
+}
+.bpro-img3{
+  background-image: url('../images/begs/beg3.jpg');
+  
+}
+.bpro-img4{
+  background-image: url('../images/begs/beg4.jpg'); 
+ 
+}
+.bpro-img5{
+  background-image: url('../images/begs/beg5.jpg');
+  
+}
+.bpro-img6{
+  background-image: url('../images/begs/beg6.jpg');
+  
+}
+.bpro-img7{
+  background-image: url('../images/begs/beg7.jpg');
+  
+}
+.bpro-img8{
+  background-image: url('../images/begs/beg8.jpg');
+  
+}
+.bpro-img9{
+  background-image: url('../images/begs/beg9.jpg');
+ 
+}
+.bpro-img10{
+  background-image: url('../images/begs/beg10.jpg');
+  
+}
+.bpro-img11{
+  background-image: url('../images/begs/beg11.jpg');
+ 
+}
+.bpro-img12{
+  background-image: url('../images/begs/beg12.jpg');
+ 
+}
+ .bpro-img1 , .bpro-img2 , .bpro-img3 , .bpro-img4 , .bpro-img5 , .bpro-img6 , .bpro-img7 , .bpro-img8 
+ , .bpro-img9 , .bpro-img10 , .bpro-img11 , .bpro-img12{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  border: 1px solid gray;
+  text-align: center;
+  transition-duration: 2s;
+}
+.bpro-img1:hover  , .bpro-img2:hover  , .bpro-img3:hover , .bpro-img4:hover , .bpro-img5:hover , .bpro-img6:hover , .bpro-img7:hover
+ , .bpro-img8:hover 
+, .bpro-img9:hover , .bpro-img10:hover , .bpro-img11:hover , .bpro-img12:hover{
+ transform: scale(1.05);
+}
+
+
+.abt{
+  background-image: url('../images/cover-pic/both-cover.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ background-position-y: top;
+  height: 300px;
+  text-align: center;
+}
+#he{
+  padding-top: 140px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px #F72020;
+}
+.str p{
+    color: gray;
+    line-height: 1.5;
+}
+.str h3 p{
+  margin-left: 30px;
+}
+.cont1{
+  border: 1px solid gray;
+  padding: 10px 20px;
+  width: 410px;
+  margin-left:68px; 
+  text-align: left !important;
+  
+}
+#con-inp{
+  background: white;
+  border: none;
+  outline: none;
+}
+.con-box{
+  border: 1px solid gray;
+  padding: 50px 10px;
+}
+.con-box2{
+  border: 1px solid gray;
+  padding: 50px 10px;
+}
+.btn3{
+  margin: 20px;
+  padding: 10px 0;
+  width: 75%;
+  border-radius: 50px;
+  color: white;
+  background: black;
+
+}
+.btn3:hover{
+  background-color: #560027;
+  color: #F72020
+}
+
+
+
+.ft{
+     background-color: #560027;
+     color: white !important;
+}
+.ft a{
+  color: gray;
+  text-decoration: none;
+}
+.ft a:hover{
+  color: #F72020;
+}
+.ft p{
+  color: gray;
+}
+.inp{
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+     background-color: #560027;
+     outline: none;
+     border-bottom: 1px solid gray ;
+}
+.dropdown-menu{
+  margin-top: 26px;
+  margin-left: -27px;
+  border-radius: 0 !important;
+  background-color: #560027;
+}
+.dropdown-item{
+  color: white;
+}
+.dropdown-item:hover{
+  color: #F72020;
+}
+.btn2{
+    padding: 8px 60px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+}
+.btn2:hover{
+  background-color: white;
+  color: #F72020;
+}
+
+#icon-t{
+  display: none;
+}
+#inp4{
+    width: 100%;
+    padding: 7px 10px;
+    
+}
+#lab{
+  margin-top: 20px;
+  font-weight: bold;
+}
+.btn-signup{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+}
+.btn-signup:hover{
+  background-color: #560027;
+  color: #F72020;
+}
+.fom{
+   padding: 50px 50px 100px 50px ;
+}
+.login{
+   width: 40%;
+   padding: 50px 50px 70px 50px;
+}
+#inp5{
+  width: 100%;
+  padding: 7px 10px;
+}
+#lab2{
+  margin-top: 30px;
+  font-weight: bold;
+}
+.btn-login{
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px 40px;
+}
+.btn-login:hover{
+background-color: #560027;
+color: #F72020;
+}
+.carttext{
+  padding: 10px 30px 50px 80px;
+}
+#labcart{
+   width:60px; 
+   margin-top: 20px;
+   margin-left: 30px;
+   font-size: 18px;
+  }
+#opt{
+    width: 70%;
+    padding: 10px;
+    margin-top: 20px;
+}
+.btno{
+  margin: 30px 0 !important;
+  font-size: 24px;
+}
+.btno:hover{
+  background-color: #560027;
+    color: #F72020 !important;
+}
+#bt{
+  margin-left: 90px;
+}
+.btn-cart{
+  padding: 10px 40px;
+  font-size: 20px;
+  background-color: black;
+  color: white !important;
+}
+.btn-cart:hover{
+    background-color: #560027;
+    color: #F72020 !important;
+}
+
+ @media only screen and (max-width:991px){
+  .imag{
+    max-height: 700px!important;
+  } 
+  .icon{
+    display: none !important;
+   }
+   #icon-t{
+     margin-left: -20px;
+     display:block !important;
+   }
+  
+ }
+
+@media only screen and (max-width:600px){
+  .navbar-brand{
+    margin-left: 0;
+    
+   }
+   .nav-links{
+     margin-left: 0!important;
+     padding-left: 0!important;
+  }
+  .navbar-brand img{
+      width: 120px!important;
+   }
+  .imag{
+    max-height: 300px!important;
+  }
+  .image1{
+    width: 100% !important;
+    height: 400px;
+    margin: 0;
+    margin-top: 20px;
+
+  }
+  .image2{
+    
+    width: 100% !important;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .image3{
+    width: 100%!important;
+    height: 400px; 
+  }
+  .image4{
+    width: 100%!important;
+    height: 400px;
+  }
+  .image5{
+    width: 100%!important;
+    height: 400px;
+  }
+  .pro{
+    margin-left: 0 !important;
+ }
+ .allpro a{
+  margin-right: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.cont1{
+  width: 100%;
+  margin-left:0; 
+}
+#cont2{
+  width: 100%;
+}
+.con-box2{
+  border-left: 1px solid gray !important; 
+  margin-top: 20px;
+}
+.icon{
+ display: none !important;
+}
+#icon-t{
+  margin-left: -20px;
+  display:block !important;
+}
+.dropdown-menu{
+  margin-top: 0;
+  margin-left: -20px;
+  width: 100%;
+  
+}
+ .pro-img8{
+ background-position: center;
+}
+.ftr{
+  margin-top: 30px;
+}
+.fom{
+  padding: 50px 20px;
+}
+#inp4{
+  border: 1px solid gray;
+}
+
+.login{
+  width: 100%;
+  padding: 50px 20px 70px 20px;
+}
+#inp5{
+ width: 100%;
+ padding: 20px 10px;
+ border: 1px solid gray;
+}
+.btn-login{
+ padding: 20px 40px;
+}
+.carttext{
+  padding-left:20px ;
+  margin-top:50px; 
+}
+#bt{
+  margin-left: 60px;
+}
+#labcart{
+  margin-left: 0;
+ }
+
+ 
+}
+
+ 
