@@ -53,7 +53,6 @@
   height: 400px;
   margin-top: 50px;
   color: white !important;
-  /* margin-left: 60px; */
   
 }
 .image3{
@@ -524,7 +523,7 @@
 .cont1{
   border: 1px solid gray;
   padding: 10px 20px;
-  width: 410px;
+  width: 75%;
   margin-left:68px; 
   text-align: left !important;
   
@@ -533,15 +532,22 @@
   background: white;
   border: none;
   outline: none;
+  width: 75%;
 }
 .con-box{
   border: 1px solid gray;
   padding: 50px 10px;
+  width: 100%;
 }
 .con-box2{
   border: 1px solid gray;
   padding: 50px 10px;
+  width: 100%;
 }
+#cont2{
+  width: 75%;
+}
+
 .btn3{
   margin: 20px;
   padding: 10px 0;
@@ -689,21 +695,9 @@ color: #F72020;
     color: #F72020 !important;
 }
 
- @media only screen and (max-width:991px){
-  .imag{
-    max-height: 700px!important;
-  } 
-  .icon{
-    display: none !important;
-   }
-   #icon-t{
-     margin-left: -20px;
-     display:block !important;
-   }
+ 
   
- }
-
-@media only screen and (max-width:600px){
+@media only screen and (max-width:576px){
   .navbar-brand{
     margin-left: 0;
     
@@ -720,7 +714,7 @@ color: #F72020;
   }
   .image1{
     width: 100% !important;
-    height: 400px;
+    height: 200px;
     margin: 0;
     margin-top: 20px;
 
@@ -728,41 +722,85 @@ color: #F72020;
   .image2{
     
     width: 100% !important;
-    height: 400px;
+    height: 200px;
     margin-top: 20px;
     margin-left: 0px;
   }
   .image3{
     width: 100%!important;
-    height: 400px; 
+    height: 200px; 
   }
   .image4{
     width: 100%!important;
-    height: 400px;
+    height:200px;
   }
   .image5{
     width: 100%!important;
-    height: 400px;
+    height: 200px;
   }
+  .pro-img1 , .pro-img2 , .pro-img3 , .pro-img4 , .pro-img5 , .pro-img6 , .pro-img7 , .pro-img8 , .pro-img9 , .pro-img10 , .pro-img11 , .pro-img12{
+    height: 250px !important;
+  } 
+  .wpro-img1 , .wpro-img2 , .wpro-img3 , .wpro-img4 , .wpro-img5 , .wpro-img6 , .wpro-img7 , .wpro-img8 , .wpro-img9 , .wpro-img10 , .wpro-img11 , .wpro-img12{
+    height: 250px !important;
+  }
+  .mpro-img2 , .mpro-img3 , .mpro-img4 , .mpro-img5 , .mpro-img6 , .mpro-img7 , .mpro-img8 , .mpro-img9 , .mpro-img10 , .mpro-img11 , .mpro-img12{
+    height: 250px !important;
+  }
+  .wtpro-img1 , .wtpro-img2 , .wtpro-img3 , .wtpro-img4 , .wtpro-img5 , .wtpro-img6 , .wtpro-img7 , .wtpro-img8 
+ , .wtpro-img9 , .wtpro-img10 , .wtpro-img11 , .wtpro-img12{
+  height: 250px !important;
+ }
+ .spro-img1 , .spro-img2 , .spro-img3 , .spro-img4 , .spro-img5 , .spro-img6 , .spro-img7 , .spro-img8 
+ , .spro-img9 , .spro-img10 , .spro-img11 , .spro-img12{
+  height: 250px !important;
+ }
+ .bpro-img1 , .bpro-img2 , .bpro-img3 , .bpro-img4 , .bpro-img5 , .bpro-img6 , .bpro-img7 , .bpro-img8 
+ , .bpro-img9 , .bpro-img10 , .bpro-img11 , .bpro-img12{
+  height: 250px !important;
+ }
+ .cartpro{
+   height: 500px !important;
+ }
+  
   .pro{
     margin-left: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    padding: 0;
  }
+ .pro h1 , h4{
+  padding-left: 10px;
+  font-size: 18px;
+}
+.pro h1{
+  padding-top: 10px;
+}
  .allpro a{
   margin-right: 5px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
 }
+.btn1{
+  margin-top: 190px;
+  padding: 10px 20px;
+  font-size: 12px;
+  
+}
 .cont1{
-  width: 100%;
-  margin-left:0; 
+  width: 100% !important;
+  margin-left:0 !important; 
 }
 #cont2{
-  width: 100%;
+  width: 100% !important;
 }
 .con-box2{
   border-left: 1px solid gray !important; 
   margin-top: 20px;
 }
+
+
+
 .icon{
  display: none !important;
 }
@@ -814,5 +852,52 @@ color: #F72020;
 
  
 }
+@media only screen and (max-width:768px){
+  .imag{
+    max-height: 400px!important;
+    
+  } 
+  .icon{
+    display: none !important;
+   }
+   #icon-t{
+     margin-left: -20px;
+     display:block !important;
+   }
+   .image1{
+    height: 300px;
+   }
+   .image2{
+    height: 300px;
+    
+  }
+  .cont1{
+    width: 75%;
+    margin-left:13%; 
+  }
+  #cont2{
+    width: 75%;
+  }
+  .con-box2{
+    border-left: 1px solid gray !important; 
+    
+  }
+  #con-inp{
+    background: white;
+    border: none;
+    outline: none;
+    width: 50%;
+  }
+  .con-box{
+    border: 1px solid gray;
+    padding: 50px 10px;
+    width: 100%;
+  }
+  .con-box2{
+    border: 1px solid gray;
+    padding: 50px 10px;
+    width: 100%;
+  }
+  
+}
 
- 
