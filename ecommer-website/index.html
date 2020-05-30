@@ -60,22 +60,22 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100 imag" src="images/cover-pic/men-cover.jpg"  height="500px" alt="First slide">
-        <div class="carousel-caption d-none d-md-block">
+        <img class="d-block w-100 imag" src="images/cover-pic/men-cover.jpg"   alt="First slide">
+        <div class="carousel-caption d-md-block">
           <h2 id="slide-text">THE FASHION STORE</h2>
          <h4 id="slide-text">COLLECTION 2K20</h4>
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100 imag" src="images/cover-pic/women-cover2.jpg"  height="500px" alt="Second slide" >
-        <div class="carousel-caption d-none d-md-block">
+        <img class="d-block w-100 imag" src="images/cover-pic/women-cover2.jpg"  alt="Second slide" >
+        <div class="carousel-caption d-md-block">
           <h2 id="slide-text">THE FASHION STORE</h2>
          <h4 id="slide-text">COLLECTION 2K20</h4>
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100 imag" src="images/cover-pic/both-cover.jpeg" height="500px"  alt="Third slide">
-        <div class="carousel-caption d-none d-md-block">
+        <img class="d-block w-100 imag" src="images/cover-pic/both-cover.jpeg"   alt="Third slide">
+        <div class="carousel-caption d-md-block">
           <h2 id="slide-text">THE FASHION STORE</h2>
          <h4 id="slide-text">COLLECTION 2K20</h4>
         </div>
@@ -92,7 +92,7 @@
     </div>
   </div>
   <div class="container">
-    <div class="row">
+    <div class="row" id="lnd-main">
        
        <div class="col-6 col-md-6 col-lg-6 pro">
         <a href="men.html">
@@ -116,7 +116,7 @@
         </a>
        </div>
       
-       <div class="col-12 col-md-6 col-lg-4 pro">
+       <div class="col-12 col-md-6 col-lg-4 pro" id="lnd">
         <a href="watches.html">
         <div class="image3">
        <h1>Watches</h1>
@@ -125,7 +125,7 @@
      </a>
 
        </div>
-       <div class="col-6 col-md-6 col-lg-4 pro">
+       <div class="col-6 col-md-6 col-lg-4 pro" id="lnd">
         <a href="shoes.html">
            <div class="image4">
           <h1>Shoes</h1>
@@ -133,7 +133,7 @@
         </div>
         </a>
        </div>
-       <div class="col-6 col-md-6 col-lg-4 pro">
+       <div class="col-6 col-md-6 col-lg-4 pro" id="lnd">
        <a href="bags.html">
            <div class="image5">
           <h1>Bags</h1>
@@ -148,7 +148,7 @@
   <div class="container" style="margin-bottom: 100px;">
      <h1 style="margin-top: 50px; margin-bottom: 30px; ">PRODUCT OVERVIEW</h1>
      <div class="row">
-       <div class="col allpro">
+       <div class="col-12 allpro">
           <a href="shop.html" style="text-decoration: underline;color: #F72020 !important;">All Products</a>
           <a href="men.html">Men</a>
           <a href="women.html">Women</a>
@@ -160,7 +160,82 @@
      <div class="row" style="margin-top: 50px;">
        <div class="col-6 col-md-4 col-lg-3">
          <div class="pro-img1">
-         <a href="addtocartmen1.html"> <button class="btn btn1 ">Quick view</button></a> 
+         <button type="button" class="btn btn1" data-toggle="modal" data-target="#exampleModalCenter1">
+          Quick view
+        </button>
+
+<div  class="modal fade" id="exampleModalCenter1" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div  class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="border-bottom: none !important; border-bottom: none !important;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row cartimg" >
+            <div class="col-sm-12 col-md-6">
+              <div class="pro-img1 cartpro" style="height: 500px;" >
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 carttext">
+              <h3 style="text-align: left !important;">Men Shirt</h4>
+              <h5 style="text-align: left !important;">Rs: 2000</h5>
+              <p style="text-align: left !important;">Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.</p>
+              <label for="size" id="labcart">Size</label>
+              <select name="size" id="opt">
+                <option value="choose-size">Choose a size</option>
+                <option value="Size S">Size S</option>
+                <option value="Size M">Size M</option>
+                <option value="Size L">Size L</option>
+                <option value="Size XL">Size XL</option>
+              </select> <br>
+              <label for="color" id="labcart">Color</label>
+              <select name="color" id="opt">
+                <option value="choose-color">Choose a color</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+              </select> <br>
+                <div id="bt" style="text-align: left !important;">
+                <button class="btn btno">-</button>
+                <button class="btn btno">1</button>
+                <button class="btn btno">+</button> <br>
+              
+           
+              <button type="submit" class="btn btn-cart" data-toggle="modal" data-target="#btnok1">
+                ADD TO CART
+              </button>
+              
+              <div class="modal fade" id="btnok1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered d-log2" role="document">
+                  <div class="modal-content" style="text-align: center;">
+                    <div class="modal-body">
+                      <img src="images/cover-pic/tick-img.png" alt="img" width="120px" height="120px" style="margin-top: 20px !important;">
+                      <h5 style="margin-top: 20px !important;">Men Shirt</h4>
+                      <p style="margin-left: 10px !important;"> is added to cart !</p>
+                    </div>
+                    <div class="modal-footer" style="border-top: none !important;">
+                      <button type="button" class=" btn close btn-ok" data-dismiss="modal" aria-label="Close">
+                         Ok
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                 </div>
+            </div>
+
+          </div>
+
+       </div>  
+      </div>
+    </div>
+  </div>
+</div>
          </div>
           <p style="margin-top: 20px; font-weight: bold;">Men Shirt <br>
           Rs: 2000</p>
@@ -168,83 +243,881 @@
        </div>
        <div class="col-6 col-md-4 col-lg-3">
         <div class="pro-img2">
-          <a href="addtocartwomen1.html"> <button class="btn btn1 ">Quick view</button></a> 
+        <button type="button" class="btn btn1" data-toggle="modal" data-target="#exampleModalCenter2">
+          Quick view
+        </button>
+        <div  class="modal fade" id="exampleModalCenter2" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div  class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header"  style="border-bottom: none !important;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row cartimg" >
+                    <div class="col-sm-12 col-md-6">
+                      <div class="pro-img2 cartpro" style="height: 500px;" >
+                      </div>
+                    </div>
+        
+                    <div class="col-sm-12 col-md-6 carttext">
+                      <h3 style="text-align: left !important;">Women coat</h4>
+                      <h5 style="text-align: left !important;">Rs: 4000</h5>
+                      <p style="text-align: left !important;">Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.</p>
+                      <label for="size" id="labcart">Size</label>
+                      <select name="size" id="opt">
+                        <option value="choose-size">Choose a size</option>
+                        <option value="Size S">Size S</option>
+                        <option value="Size M">Size M</option>
+                        <option value="Size L">Size L</option>
+                        <option value="Size XL">Size XL</option>
+                      </select> <br>
+                      <label for="color" id="labcart">Color</label>
+                      <select name="color" id="opt">
+                        <option value="choose-color">Choose a color</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                      </select> <br>
+                        <div id="bt" style="text-align: left !important;">
+                        <button class="btn btno">-</button>
+                        <button class="btn btno">1</button>
+                        <button class="btn btno">+</button> <br>
+                      
+                     
+
+                      <button type="submit" class="btn btn-cart" data-toggle="modal" data-target="#btnok2">
+                        ADD TO CART
+                      </button>
+                      <div class="modal fade" id="btnok2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-log2" role="document">
+                          <div class="modal-content" style="text-align: center;">
+                            <div class="modal-body">
+                              <img src="images/cover-pic/tick-img.png" alt="img" width="120px" height="120px" style="margin-top: 20px !important;">
+                              <h5 style="margin-top: 20px !important;">Women Coat</h4>
+                              <p style="margin-left: 10px !important;"> is added to cart !</p>
+                            </div>
+                            <div class="modal-footer" style="border-top: none !important;">
+                              <button type="button" class=" btn close btn-ok" data-dismiss="modal" aria-label="Close">
+                                 Ok
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                         </div>
+                    </div>
+        
+                  </div>
+        
+               </div>  
+              </div>
+            </div>
+          </div>
         </div>
+                 </div>
         <p style="margin-top: 20px; font-weight: bold;">Women coat <br>
           Rs: 4000</p>
 
        </div>
        <div class="col-6 col-md-4 col-lg-3">
         <div class="pro-img3">
-          <a href="addtocartwatch1.html"> <button class="btn btn1 ">Quick view</button></a> 
+        <button type="button" class="btn btn1" data-toggle="modal" data-target="#exampleModalCenter3">
+          Quick view
+        </button>
+        <div  class="modal fade" id="exampleModalCenter3" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div  class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header"  style="border-bottom: none !important;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row cartimg" >
+                    <div class="col-sm-12 col-md-6">
+                      <div class="pro-img3 cartpro" style="height: 500px;" >
+                      </div>
+                    </div>
+        
+                    <div class="col-sm-12 col-md-6 carttext">
+                      <h3 style="text-align: left !important;">Wrist Watch</h4>
+                      <h5 style="text-align: left !important;">Rs: 2000</h5>
+                      <p style="text-align: left !important;">Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.</p>
+                      <label for="size" id="labcart">Size</label>
+                      <select name="size" id="opt">
+                        <option value="choose-size">Choose a size</option>
+                        <option value="Size S">Size S</option>
+                        <option value="Size M">Size M</option>
+                        <option value="Size L">Size L</option>
+                        <option value="Size XL">Size XL</option>
+                      </select> <br>
+                      <label for="color" id="labcart">Color</label>
+                      <select name="color" id="opt">
+                        <option value="choose-color">Choose a color</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                      </select> <br>
+                        <div id="bt" style="text-align: left !important;">
+                        <button class="btn btno">-</button>
+                        <button class="btn btno">1</button>
+                        <button class="btn btno">+</button> <br>
+                     
+                      <button type="submit" class="btn btn-cart" data-toggle="modal" data-target="#btnok3">
+                        ADD TO CART
+                      </button>
+                      
+                      <div class="modal fade" id="btnok3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-log2" role="document">
+                          <div class="modal-content" style="text-align: center;">
+                            <div class="modal-body">
+                              <img src="images/cover-pic/tick-img.png" alt="img" width="120px" height="120px" style="margin-top: 20px !important;">
+                              <h5 style="margin-top: 20px !important;">Wrist Watch</h4>
+                              <p style="margin-left: 10px !important;"> is added to cart !</p>
+                            </div>
+                            <div class="modal-footer" style="border-top: none !important;">
+                              <button type="button" class=" btn close btn-ok" data-dismiss="modal" aria-label="Close">
+                                 Ok
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                         </div>
+                    </div>
+        
+                  </div>
+        
+               </div>  
+              </div>
+            </div>
+          </div>
         </div>
+                 </div>
         <p style="margin-top: 20px; font-weight: bold;">Wrist Watch <br>
           Rs: 2000</p>
        </div>
        <div class="col-6 col-md-4 col-lg-3">
 
         <div class="pro-img4">
-          <a href="addtocartshoes1.html"> <button class="btn btn1">Quick view</button></a> 
+        <button type="button" class="btn btn1" data-toggle="modal" data-target="#exampleModalCenter4">
+          Quick view
+        </button>
+        <div  class="modal fade" id="exampleModalCenter4" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div  class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header"  style="border-bottom: none !important;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row cartimg" >
+                    <div class="col-sm-12 col-md-6">
+                      <div class="pro-img4 cartpro" style="height: 500px;" >
+                      </div>
+                    </div>
+        
+                    <div class="col-sm-12 col-md-6 carttext">
+                      <h3 style="text-align: left !important;">Men Shoes</h4>
+                      <h5 style="text-align: left !important;">Rs: 5000</h5>
+                      <p style="text-align: left !important;">Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.</p>
+                      <label for="size" id="labcart">Size</label>
+                      <select name="size" id="opt">
+                        <option value="choose-size">Choose a size</option>
+                        <option value="Size S">Size S</option>
+                        <option value="Size M">Size M</option>
+                        <option value="Size L">Size L</option>
+                        <option value="Size XL">Size XL</option>
+                      </select> <br>
+                      <label for="color" id="labcart">Color</label>
+                      <select name="color" id="opt">
+                        <option value="choose-color">Choose a color</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                      </select> <br>
+                        <div id="bt" style="text-align: left !important;">
+                        <button class="btn btno">-</button>
+                        <button class="btn btno">1</button>
+                        <button class="btn btno">+</button> <br>
+                      
+                      <button type="submit" class="btn btn-cart" data-toggle="modal" data-target="#btnok4">
+                        ADD TO CART
+                      </button>
+                      
+                      <div class="modal fade" id="btnok4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-log2" role="document">
+                          <div class="modal-content" style="text-align: center;">
+                            <div class="modal-body">
+                              <img src="images/cover-pic/tick-img.png" alt="img" width="120px" height="120px" style="margin-top: 20px !important;">
+                              <h5 style="margin-top: 20px !important;">Men Shoes</h4>
+                              <p style="margin-left: 10px !important;"> is added to cart !</p>
+                            </div>
+                            <div class="modal-footer" style="border-top: none !important;">
+                              <button type="button" class=" btn close btn-ok" data-dismiss="modal" aria-label="Close">
+                                 Ok
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                         </div>
+                    </div>
+        
+                  </div>
+        
+               </div>  
+              </div>
+            </div>
+          </div>
         </div>
+                 </div>
         <p style="margin-top: 20px; font-weight: bold;">Men Shoes <br>
           Rs: 5000</p>
        </div>
          
        <div class="col-6 col-md-4 col-lg-3">
         <div class="pro-img5">
-         <a href="addtocartbag1.html"> <button class="btn btn1">Quick view</button></a> 
+        <button type="button" class="btn btn1" data-toggle="modal" data-target="#exampleModalCenter5">
+          Quick view
+        </button>
+        <div  class="modal fade" id="exampleModalCenter5" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div  class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header"  style="border-bottom: none !important;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row cartimg" >
+                    <div class="col-sm-12 col-md-6">
+                      <div class="pro-img5 cartpro" style="height: 500px;" >
+                      </div>
+                    </div>
+        
+                    <div class="col-sm-12 col-md-6 carttext">
+                      <h3 style="text-align: left !important;">Hand Bag</h4>
+                      <h5 style="text-align: left !important;">Rs: 3000</h5>
+                      <p style="text-align: left !important;">Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.</p>
+                      <label for="size" id="labcart">Size</label>
+                      <select name="size" id="opt">
+                        <option value="choose-size">Choose a size</option>
+                        <option value="Size S">Size S</option>
+                        <option value="Size M">Size M</option>
+                        <option value="Size L">Size L</option>
+                        <option value="Size XL">Size XL</option>
+                      </select> <br>
+                      <label for="color" id="labcart">Color</label>
+                      <select name="color" id="opt">
+                        <option value="choose-color">Choose a color</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                      </select> <br>
+                        <div id="bt" style="text-align: left !important;">
+                        <button class="btn btno">-</button>
+                        <button class="btn btno">1</button>
+                        <button class="btn btno">+</button> <br>
+                  
+
+                      <button type="submit" class="btn btn-cart" data-toggle="modal" data-target="#btnok5">
+                        ADD TO CART
+                      </button>
+                      <div class="modal fade" id="btnok5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-log2" role="document">
+                          <div class="modal-content" style="text-align: center;">
+                            <div class="modal-body">
+                              <img src="images/cover-pic/tick-img.png" alt="img" width="120px" height="120px" style="margin-top: 20px !important;">
+                              <h5 style="margin-top: 20px !important;">Hand Bag</h4>
+                              <p style="margin-left: 10px !important;"> is added to cart !</p>
+                            </div>
+                            <div class="modal-footer" style="border-top: none !important;">
+                              <button type="button" class=" btn close btn-ok" data-dismiss="modal" aria-label="Close">
+                                 Ok
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                         </div>
+                    </div>
+        
+                  </div>
+        
+               </div>  
+              </div>
+            </div>
+          </div>
         </div>
+                 </div>
         <p style="margin-top: 20px; font-weight: bold;"> Hand bag <br>
          Rs: 3000</p>
       </div>
       <div class="col-6 col-md-4 col-lg-3">
        <div class="pro-img6">
-         <a href="addtocartmen2.html"> <button class="btn btn1 ">Quick view</button></a> 
-       </div>
+       
+       <button type="button" class="btn btn1" data-toggle="modal" data-target="#exampleModalCenter6">
+        Quick view
+      </button>
+      <div  class="modal fade" id="exampleModalCenter6" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div  class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header"  style="border-bottom: none !important;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row cartimg" >
+                  <div class="col-sm-12 col-md-6">
+                    <div class="pro-img6 cartpro" style="height: 500px;" >
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-12 col-md-6 carttext">
+                    <h3 style="text-align: left !important;">Men Shirt</h4>
+                    <h5 style="text-align: left !important;">Rs: 2000</h5>
+                    <p style="text-align: left !important;">Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.</p>
+                    <label for="size" id="labcart">Size</label>
+                    <select name="size" id="opt">
+                      <option value="choose-size">Choose a size</option>
+                      <option value="Size S">Size S</option>
+                      <option value="Size M">Size M</option>
+                      <option value="Size L">Size L</option>
+                      <option value="Size XL">Size XL</option>
+                    </select> <br>
+                    <label for="color" id="labcart">Color</label>
+                    <select name="color" id="opt">
+                      <option value="choose-color">Choose a color</option>
+                      <option value="red">Red</option>
+                      <option value="blue">Blue</option>
+                      <option value="black">Black</option>
+                      <option value="white">White</option>
+                    </select> <br>
+                      <div id="bt" style="text-align: left !important;">
+                      <button class="btn btno">-</button>
+                      <button class="btn btno">1</button>
+                      <button class="btn btno">+</button> <br>
+                    
+
+                    <button type="submit" class="btn btn-cart" data-toggle="modal" data-target="#btnok6">
+                      ADD TO CART
+                    </button>
+                    <div class="modal fade" id="btnok6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered d-log2" role="document">
+                        <div class="modal-content" style="text-align: center;">
+                          <div class="modal-body">
+                            <img src="images/cover-pic/tick-img.png" alt="img" width="120px" height="120px" style="margin-top: 20px !important;">
+                            <h5 style="margin-top: 20px !important;">Men Shirt</h4>
+                            <p style="margin-left: 10px !important;"> is added to cart !</p>
+                          </div>
+                          <div class="modal-footer" style="border-top: none !important;">
+                            <button type="button" class=" btn close btn-ok" data-dismiss="modal" aria-label="Close">
+                               Ok
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                       </div>
+                  </div>
+      
+                </div>
+      
+             </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+               </div>
        <p style="margin-top: 20px; font-weight: bold;">Men Shirt <br>
          Rs: 2000</p>
       </div>
       <div class="col-6 col-md-4 col-lg-3">
        <div class="pro-img7">
-         <a href="addtocartwomen2.html"> <button class="btn btn1 ">Quick view</button></a> 
-       </div>
+       <button type="button" class="btn btn1" data-toggle="modal" data-target="#exampleModalCenter7">
+        Quick view
+      </button>
+      <div  class="modal fade" id="exampleModalCenter7" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div  class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header"  style="border-bottom: none !important;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row cartimg" >
+                  <div class="col-sm-12 col-md-6">
+                    <div class="pro-img7 cartpro" style="height: 500px;" >
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-12 col-md-6 carttext">
+                    <h3 style="text-align: left !important;">Women Shirt</h4>
+                    <h5 style="text-align: left !important;">Rs: 3000</h5>
+                    <p style="text-align: left !important;">Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.</p>
+                    <label for="size" id="labcart">Size</label>
+                    <select name="size" id="opt">
+                      <option value="choose-size">Choose a size</option>
+                      <option value="Size S">Size S</option>
+                      <option value="Size M">Size M</option>
+                      <option value="Size L">Size L</option>
+                      <option value="Size XL">Size XL</option>
+                    </select> <br>
+                    <label for="color" id="labcart">Color</label>
+                    <select name="color" id="opt">
+                      <option value="choose-color">Choose a color</option>
+                      <option value="red">Red</option>
+                      <option value="blue">Blue</option>
+                      <option value="black">Black</option>
+                      <option value="white">White</option>
+                    </select> <br>
+                      <div id="bt" style="text-align: left !important;">
+                      <button class="btn btno">-</button>
+                      <button class="btn btno">1</button>
+                      <button class="btn btno">+</button> <br>
+
+                    <button type="submit" class="btn btn-cart" data-toggle="modal" data-target="#btnok7">
+                      ADD TO CART
+                    </button>
+                    <div class="modal fade" id="btnok7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered d-log2" role="document">
+                        <div class="modal-content" style="text-align: center;">
+                          <div class="modal-body">
+                            <img src="images/cover-pic/tick-img.png" alt="img" width="120px" height="120px" style="margin-top: 20px !important;">
+                            <h5 style="margin-top: 20px !important;">Women Shirt</h4>
+                            <p style="margin-left: 10px !important;"> is added to cart !</p>
+                          </div>
+                          <div class="modal-footer" style="border-top: none !important;">
+                            <button type="button" class=" btn close btn-ok" data-dismiss="modal" aria-label="Close">
+                               Ok
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                       </div>
+                  </div>
+      
+                </div>
+      
+             </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+               </div>
        <p style="margin-top: 20px; font-weight: bold;">Women Shirt <br>
          Rs: 3000</p>
       </div>
       <div class="col-6 col-md-4 col-lg-3">
 
        <div class="pro-img8">
-         <a href="addtocartwatch2.html"> <button class="btn btn1 ">Quick view</button></a> 
-       </div>
+       <button type="button" class="btn btn1" data-toggle="modal" data-target="#exampleModalCenter8">
+        Quick view
+      </button>
+      <div  class="modal fade" id="exampleModalCenter8" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div  class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header"  style="border-bottom: none !important;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row cartimg" >
+                  <div class="col-sm-12 col-md-6">
+                    <div class="pro-img8 cartpro" style="height: 500px;" >
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-12 col-md-6 carttext">
+                    <h3 style="text-align: left !important;">Men Watch</h4>
+                    <h5 style="text-align: left !important;">Rs: 3000</h5>
+                    <p style="text-align: left !important;">Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.</p>
+                    <label for="size" id="labcart">Size</label>
+                    <select name="size" id="opt">
+                      <option value="choose-size">Choose a size</option>
+                      <option value="Size S">Size S</option>
+                      <option value="Size M">Size M</option>
+                      <option value="Size L">Size L</option>
+                      <option value="Size XL">Size XL</option>
+                    </select> <br>
+                    <label for="color" id="labcart">Color</label>
+                    <select name="color" id="opt">
+                      <option value="choose-color">Choose a color</option>
+                      <option value="red">Red</option>
+                      <option value="blue">Blue</option>
+                      <option value="black">Black</option>
+                      <option value="white">White</option>
+                    </select> <br>
+                      <div id="bt" style="text-align: left !important;">
+                      <button class="btn btno">-</button>
+                      <button class="btn btno">1</button>
+                      <button class="btn btno">+</button> <br>
+
+                    <button type="submit" class="btn btn-cart" data-toggle="modal" data-target="#btnok8">
+                      ADD TO CART
+                    </button>
+                    
+                    <div class="modal fade" id="btnok8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered d-log2" role="document">
+                        <div class="modal-content" style="text-align: center;">
+                          <div class="modal-body">
+                            <img src="images/cover-pic/tick-img.png" alt="img" width="120px" height="120px" style="margin-top: 20px !important;">
+                            <h5 style="margin-top: 20px !important;">Men Watch</h4>
+                            <p style="margin-left: 10px !important;"> is added to cart !</p>
+                          </div>
+                          <div class="modal-footer" style="border-top: none !important;">
+                            <button type="button" class=" btn close btn-ok" data-dismiss="modal" aria-label="Close">
+                               Ok
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                       </div>
+                  </div>
+      
+                </div>
+      
+             </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+               </div>
        <p style="margin-top: 20px; font-weight: bold;">Men Watch <br>
          Rs: 3000</p>
       </div>
 
        <div class="col-6 col-md-4 col-lg-3">
         <div class="pro-img9">
-         <a href="addtocartshoes2.html"> <button class="btn btn1">Quick view</button></a>
+        <button type="button" class="btn btn1" data-toggle="modal" data-target="#exampleModalCenter9">
+          Quick view
+        </button>
+        <div  class="modal fade" id="exampleModalCenter9" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div  class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header"  style="border-bottom: none !important;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row cartimg" >
+                    <div class="col-sm-12 col-md-6">
+                      <div class="pro-img9 cartpro" style="height: 500px;" >
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 carttext">
+                      <h3 style="text-align: left !important;">Men Shoes</h4>
+                      <h5 style="text-align: left !important;">Rs: 4000</h5>
+                      <p style="text-align: left !important;">Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.</p>
+                      <label for="size" id="labcart">Size</label>
+                      <select name="size" id="opt">
+                        <option value="choose-size">Choose a size</option>
+                        <option value="Size S">Size S</option>
+                        <option value="Size M">Size M</option>
+                        <option value="Size L">Size L</option>
+                        <option value="Size XL">Size XL</option>
+                      </select> <br>
+                      <label for="color" id="labcart">Color</label>
+                      <select name="color" id="opt">
+                        <option value="choose-color">Choose a color</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                      </select> <br>
+                        <div id="bt" style="text-align: left !important;">
+                        <button class="btn btno">-</button>
+                        <button class="btn btno">1</button>
+                        <button class="btn btno">+</button> <br>
+
+                      <button type="submit" class="btn btn-cart" data-toggle="modal" data-target="#btnok9">
+                        ADD TO CART
+                      </button>
+                      
+                      <div class="modal fade" id="btnok9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-log2" role="document">
+                          <div class="modal-content" style="text-align: center;">
+                            <div class="modal-body">
+                              <img src="images/cover-pic/tick-img.png" alt="img" width="120px" height="120px" style="margin-top: 20px !important;">
+                              <h5 style="margin-top: 20px !important;">Men Shoes</h4>
+                              <p style="margin-left: 10px !important;"> is added to cart !</p>
+                            </div>
+                            <div class="modal-footer" style="border-top: none !important;">
+                              <button type="button" class=" btn close btn-ok" data-dismiss="modal" aria-label="Close">
+                                 Ok
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                         </div>
+                    </div>
+        
+                  </div>
+        
+               </div>  
+              </div>
+            </div>
+          </div>
         </div>
+                 </div>
         <p style="margin-top: 20px; font-weight: bold;">Men Shoes <br>
          Rs: 4000</p>
       </div>
       <div class="col-6 col-md-4 col-lg-3">
        <div class="pro-img10">
-         <a href="addtocartbag2.html"> <button class="btn btn1">Quick view</button></a> 
-       </div>
+       <button type="button" class="btn btn1" data-toggle="modal" data-target="#exampleModalCenter10">
+        Quick view
+      </button>
+      <div  class="modal fade" id="exampleModalCenter10" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div  class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header"  style="border-bottom: none !important;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row cartimg" >
+                  <div class="col-sm-12 col-md-6">
+                    <div class="pro-img10 cartpro" style="height: 500px;" >
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-12 col-md-6 carttext">
+                    <h3 style="text-align: left !important;">Hand Bag</h4>
+                    <h5 style="text-align: left !important;">Rs: 2000</h5>
+                    <p style="text-align: left !important;">Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.</p>
+                    <label for="size" id="labcart">Size</label>
+                    <select name="size" id="opt">
+                      <option value="choose-size">Choose a size</option>
+                      <option value="Size S">Size S</option>
+                      <option value="Size M">Size M</option>
+                      <option value="Size L">Size L</option>
+                      <option value="Size XL">Size XL</option>
+                    </select> <br>
+                    <label for="color" id="labcart">Color</label>
+                    <select name="color" id="opt">
+                      <option value="choose-color">Choose a color</option>
+                      <option value="red">Red</option>
+                      <option value="blue">Blue</option>
+                      <option value="black">Black</option>
+                      <option value="white">White</option>
+                    </select> <br>
+                      <div id="bt" style="text-align: left !important;">
+                      <button class="btn btno">-</button>
+                      <button class="btn btno">1</button>
+                      <button class="btn btno">+</button> <br>
+                  
+                    <button type="submit" class="btn btn-cart" data-toggle="modal" data-target="#btnok10">
+                      ADD TO CART
+                    </button>
+                    
+                    <div class="modal fade" id="btnok10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered d-log2" role="document">
+                        <div class="modal-content" style="text-align: center;">
+                          <div class="modal-body">
+                            <img src="images/cover-pic/tick-img.png" alt="img" width="120px" height="120px" style="margin-top: 20px !important;">
+                            <h5 style="margin-top: 20px !important;">Hnad Bag</h4>
+                            <p style="margin-left: 10px !important;"> is added to cart !</p>
+                          </div>
+                          <div class="modal-footer" style="border-top: none !important;">
+                            <button type="button" class=" btn close btn-ok" data-dismiss="modal" aria-label="Close">
+                               Ok
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                       </div>
+                  </div>
+      
+                </div>
+      
+             </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+               </div>
        <p style="margin-top: 20px; font-weight: bold;">Hand bag <br>
          Rs: 2000</p>
       </div>
       <div class="col-6 col-md-4 col-lg-3">
        <div class="pro-img11">
-         <a href="addtocartmen3.html"> <button class="btn btn1">Quick view</button></a>  
-       </div>
+       <button type="button" class="btn btn1" data-toggle="modal" data-target="#exampleModalCenter11">
+        Quick view
+      </button>
+      <div  class="modal fade" id="exampleModalCenter11" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div  class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header"  style="border-bottom: none !important;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row cartimg" >
+                  <div class="col-sm-12 col-md-6">
+                    <div class="pro-img11 cartpro" style="height: 500px;" >
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-12 col-md-6 carttext">
+                    <h3 style="text-align: left !important;">Men Shirt</h4>
+                    <h5 style="text-align: left !important;">Rs: 3000</h5>
+                    <p style="text-align: left !important;">Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.</p>
+                    <label for="size" id="labcart">Size</label>
+                    <select name="size" id="opt">
+                      <option value="choose-size">Choose a size</option>
+                      <option value="Size S">Size S</option>
+                      <option value="Size M">Size M</option>
+                      <option value="Size L">Size L</option>
+                      <option value="Size XL">Size XL</option>
+                    </select> <br>
+                    <label for="color" id="labcart">Color</label>
+                    <select name="color" id="opt">
+                      <option value="choose-color">Choose a color</option>
+                      <option value="red">Red</option>
+                      <option value="blue">Blue</option>
+                      <option value="black">Black</option>
+                      <option value="white">White</option>
+                    </select> <br>
+                      <div id="bt" style="text-align: left !important;">
+                      <button class="btn btno">-</button>
+                      <button class="btn btno">1</button>
+                      <button class="btn btno">+</button> <br>
+                    <button type="submit" class="btn btn-cart" data-toggle="modal" data-target="#btnok11">
+                      ADD TO CART
+                    </button>
+                    <div class="modal fade" id="btnok11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered d-log2" role="document">
+                        <div class="modal-content" style="text-align: center;">
+                          <div class="modal-body">
+                            <img src="images/cover-pic/tick-img.png" alt="img" width="120px" height="120px" style="margin-top: 20px !important;">
+                            <h5 style="margin-top: 20px !important;">Men Shirt</h4>
+                            <p style="margin-left: 10px !important;"> is added to cart !</p>
+                          </div>
+                          <div class="modal-footer" style="border-top: none !important;">
+                            <button type="button" class=" btn close btn-ok" data-dismiss="modal" aria-label="Close">
+                               Ok
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                       </div>
+                  </div>
+      
+                </div>
+      
+             </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+               </div>
        <p style="margin-top: 20px; font-weight: bold;">Men Shirt <br>
          Rs: 3000</p>
       </div>
       <div class="col-6 col-md-4 col-lg-3">
        <div class="pro-img12">
-         <a href="addtocartbag3.html"> <button class="btn btn1">Quick view</button></a> 
-       </div>
+       <button type="button" class="btn btn1" data-toggle="modal" data-target="#exampleModalCenter12">
+        Quick view
+      </button>
+      <div  class="modal fade" id="exampleModalCenter12" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div  class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="border-bottom: none !important;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row cartimg" >
+                  <div class="col-sm-12 col-md-6">
+                    <div class="pro-img12 cartpro" style="height: 500px;" >
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6 carttext">
+                    <h3 style="text-align: left !important;">Hand Bag</h4>
+                    <h5 style="text-align: left !important;">Rs: 2000</h5>
+                    <p style="text-align: left !important;">Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.</p>
+                    <label for="size" id="labcart">Size</label>
+                    <select name="size" id="opt">
+                      <option value="choose-size">Choose a size</option>
+                      <option value="Size S">Size S</option>
+                      <option value="Size M">Size M</option>
+                      <option value="Size L">Size L</option>
+                      <option value="Size XL">Size XL</option>
+                    </select> <br>
+                    <label for="color" id="labcart">Color</label>
+                    <select name="color" id="opt">
+                      <option value="choose-color">Choose a color</option>
+                      <option value="red">Red</option>
+                      <option value="blue">Blue</option>
+                      <option value="black">Black</option>
+                      <option value="white">White</option>
+                    </select> <br>
+                      <div id="bt" style="text-align: left !important;">
+                      <button class="btn btno">-</button>
+                      <button class="btn btno">1</button>
+                      <button class="btn btno">+</button> <br>
+                    <button type="submit" class="btn btn-cart" data-toggle="modal" data-target="#btnok12">
+                      ADD TO CART
+                    </button>
+                    <div class="modal fade" id="btnok12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered d-log2" role="document">
+                        <div class="modal-content" style="text-align: center;">
+                          <div class="modal-body">
+                            <img src="images/cover-pic/tick-img.png" alt="img" width="120px" height="120px" style="margin-top: 20px !important;">
+                            <h5 style="margin-top: 20px !important;">Hand Bag</h4>
+                            <p style="margin-left: 10px !important;"> is added to cart !</p>
+                          </div>
+                          <div class="modal-footer" style="border-top: none !important;">
+                            <button type="button" class=" btn close btn-ok" data-dismiss="modal" aria-label="Close">
+                               Ok
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                       </div>
+                  </div>
+      
+                </div>
+      
+             </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+               </div>
        <p style="margin-top: 20px; font-weight: bold;">Hand bag <br>
          Rs: 2000</p>
       </div>
@@ -299,8 +1172,11 @@
   </script>
 
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
 </body>
 </html>

@@ -39,10 +39,8 @@
   background-position-y:top ;
   width: 100% !important;
   height: 400px;
-  margin-top: 50px;
   color: white !important;
 }
-
 
 .image2{
   background-image: url('../images/womens/pic12.jpg');
@@ -51,7 +49,6 @@
   background-position-x:left;
   width: 100% !important;
   height: 400px;
-  margin-top: 50px;
   color: white !important;
   
 }
@@ -62,7 +59,6 @@
   background-position: center;
   width: 100%!important;
   height: 300px;
-  margin-top: 20px;
   color: white !important;
   
 }
@@ -73,7 +69,6 @@
   background-position: center;
   width: 100%!important;
   height: 300px;
-  margin-top: 20px;
   color: white !important;
  
 }
@@ -85,9 +80,11 @@
   background-position-y:top ;
   width: 100%!important;
   height: 300px;
-  margin-top: 20px;
   color: white !important;
   
+}
+#lnd-main{
+  margin-top: 30px !important;
 }
 .pro{
    padding: 10px !important
@@ -97,6 +94,7 @@
 }
 .pro a{
     text-decoration: none;
+    
 }
 .pro a:hover h1 , .pro a:hover h4{
   color: #F72020 !important;
@@ -106,6 +104,7 @@
    text-decoration: none;
    color: black;
    font-size: 18px;
+   font-weight: bold;
 }
 .allpro a:hover {
   color: #F72020;
@@ -167,12 +166,8 @@
     height: 400px;
     border: 1px solid gray;
     text-align: center;
-    transition-duration: 2s;
 }
-.pro-img1:hover , .pro-img2:hover  , .pro-img3:hover , .pro-img4:hover , .pro-img5:hover , .pro-img6:hover , .pro-img7:hover , .pro-img8:hover 
- , .pro-img9:hover , .pro-img10:hover , .pro-img11:hover , .pro-img12:hover{
-   transform: scale(1.05);
-}
+
 
 .btn1{
      margin-top: 340px;
@@ -238,13 +233,7 @@
   height: 400px;
   border: 1px solid gray;
   text-align: center;
-  transition-duration: 2s;
 }
-.mpro-img2:hover  , .mpro-img3:hover , .mpro-img4:hover , .mpro-img5:hover , .mpro-img6:hover , .mpro-img7:hover , .mpro-img8:hover 
-, .mpro-img9:hover , .mpro-img10:hover , .mpro-img11:hover , .mpro-img12:hover{
- transform: scale(1.05);
-}
-
 .wpro-img1{
   background-image: url('../images/womens/pic1.jpg');
   
@@ -301,11 +290,6 @@
   height: 400px;
   border: 1px solid gray;
   text-align: center;
-  transition-duration: 2s;
-}
-.wpro-img2:hover  , .wpro-img3:hover , .wpro-img4:hover , .wpro-img5:hover , .wpro-img6:hover , .wpro-img7:hover , .wpro-img8:hover 
-, .wpro-img9:hover , .wpro-img10:hover , .wpro-img11:hover , .wpro-img12:hover{
- transform: scale(1.05);
 }
 .wtpro-img1{
   background-image: url('../images/watches/watch1.jpg');
@@ -364,12 +348,6 @@
   height: 400px;
   border: 1px solid gray;
   text-align: center;
-  transition-duration: 2s;
-}
-.wtpro-img1:hover , .wtpro-img2:hover  , .wtpro-img3:hover , .wtpro-img4:hover , .wtpro-img5:hover , .wtpro-img6:hover , .wtpro-img7:hover
- , .wtpro-img8:hover 
-, .wtpro-img9:hover , .wtpro-img10:hover , .wtpro-img11:hover , .wtpro-img12:hover{
- transform: scale(1.05);
 }
 .spro-img1{
   background-image: url('../images/shoes/shoes1.jpg');
@@ -427,12 +405,6 @@
   height: 400px;
   border: 1px solid gray;
   text-align: center;
-  transition-duration: 2s;
-}
-.spro-img1:hover  , .spro-img2:hover  , .spro-img3:hover , .spro-img4:hover , .spro-img5:hover , .spro-img6:hover , .spro-img7:hover
- , .spro-img8:hover 
-, .spro-img9:hover , .spro-img10:hover , .spro-img11:hover , .spro-img12:hover{
- transform: scale(1.05);
 }
 .bpro-img1{
   background-image: url('../images/begs/beg1.jpg');
@@ -490,15 +462,7 @@
   height: 400px;
   border: 1px solid gray;
   text-align: center;
-  transition-duration: 2s;
 }
-.bpro-img1:hover  , .bpro-img2:hover  , .bpro-img3:hover , .bpro-img4:hover , .bpro-img5:hover , .bpro-img6:hover , .bpro-img7:hover
- , .bpro-img8:hover 
-, .bpro-img9:hover , .bpro-img10:hover , .bpro-img11:hover , .bpro-img12:hover{
- transform: scale(1.05);
-}
-
-
 .abt{
   background-image: url('../images/cover-pic/both-cover.jpeg');
   background-repeat: no-repeat;
@@ -676,13 +640,16 @@ color: #F72020;
 .btno{
   margin: 30px 0 !important;
   font-size: 24px;
+  width: 50px;
+  text-align: center;
+  
 }
 .btno:hover{
   background-color: #560027;
     color: #F72020 !important;
 }
 #bt{
-  margin-left: 90px;
+  margin-left: 110px;
 }
 .btn-cart{
   padding: 10px 40px;
@@ -695,9 +662,24 @@ color: #F72020;
     color: #F72020 !important;
 }
 
+.modal-dialog {
+  max-width: 80% !important;
+  
+}
+.d-log2{
+  max-width: 40% !important;
+  padding-top: 50px !important;
+}
+.btn-ok{
+  padding: 10px 20px !important;
+   background-color: black !important;
+   color: white !important;
+   margin-top: 0 !important;
+}
  
   
-@media only screen and (max-width:576px){
+
+@media only screen and (max-width: 576px) { 
   .navbar-brand{
     margin-left: 0;
     
@@ -710,11 +692,11 @@ color: #F72020;
       width: 120px!important;
    }
   .imag{
-    max-height: 300px!important;
+    height: 300px !important;
   }
   .image1{
     width: 100% !important;
-    height: 200px;
+    height: 200px !important;
     margin: 0;
     margin-top: 20px;
 
@@ -722,21 +704,21 @@ color: #F72020;
   .image2{
     
     width: 100% !important;
-    height: 200px;
+    height: 200px !important;
     margin-top: 20px;
     margin-left: 0px;
   }
   .image3{
     width: 100%!important;
-    height: 200px; 
+    height: 200px !important; 
   }
   .image4{
     width: 100%!important;
-    height:200px;
+    height:200px !important;
   }
   .image5{
     width: 100%!important;
-    height: 200px;
+    height: 200px !important;
   }
   .pro-img1 , .pro-img2 , .pro-img3 , .pro-img4 , .pro-img5 , .pro-img6 , .pro-img7 , .pro-img8 , .pro-img9 , .pro-img10 , .pro-img11 , .pro-img12{
     height: 250px !important;
@@ -760,14 +742,18 @@ color: #F72020;
   height: 250px !important;
  }
  .cartpro{
-   height: 500px !important;
+   height: 300px !important;
+ }
+ .abt{
+   height: 200px;
  }
   
   .pro{
     margin-left: 0 !important;
     margin-top: 0 !important;
     padding-top: 0 !important;
-    padding: 0;
+    padding: 5px !important;
+    padding-top: 0 !important;
  }
  .pro h1 , h4{
   padding-left: 10px;
@@ -778,7 +764,7 @@ color: #F72020;
 }
  .allpro a{
   margin-right: 5px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 }
 .btn1{
@@ -798,9 +784,6 @@ color: #F72020;
   border-left: 1px solid gray !important; 
   margin-top: 20px;
 }
-
-
-
 .icon{
  display: none !important;
 }
@@ -826,7 +809,6 @@ color: #F72020;
 #inp4{
   border: 1px solid gray;
 }
-
 .login{
   width: 100%;
   padding: 50px 20px 70px 20px;
@@ -841,22 +823,50 @@ color: #F72020;
 }
 .carttext{
   padding-left:20px ;
-  margin-top:50px; 
+  margin-top:10px; 
 }
 #bt{
-  margin-left: 60px;
+  margin-left: 77px;
 }
 #labcart{
   margin-left: 0;
+  margin: 0 !important;
  }
-
- 
+ #opt{
+   margin-top: 5px;
+ }
+ .btno{
+   margin: 20px 0 !important;
+ }
+.modal-dialog {
+  max-width: 100% !important;
+  
 }
-@media only screen and (max-width:768px){
+.contct{
+  padding: 10px !important;
+}
+.con-boxtext{
+  margin: 10px !important;
+  margin-left: 40px !important;
+}
+#slide-text{
+    font-size: medium;
+}
+#lnd-main{
+  margin-top: 0 !important;
+}
+#lnd{
+  margin-top: 10px !important;
+}
+ }
+@media screen and (min-width: 577px) and (max-width: 768px) { 
   .imag{
-    max-height: 400px!important;
+    height: 400px !important;
     
   } 
+  .image1 , .image2{
+    height: 300px;
+  }
   .icon{
     display: none !important;
    }
@@ -864,13 +874,6 @@ color: #F72020;
      margin-left: -20px;
      display:block !important;
    }
-   .image1{
-    height: 300px;
-   }
-   .image2{
-    height: 300px;
-    
-  }
   .cont1{
     width: 75%;
     margin-left:13%; 
@@ -898,6 +901,65 @@ color: #F72020;
     padding: 50px 10px;
     width: 100%;
   }
+  .modal-dialog {
+  max-width: 100% !important;
   
 }
-
+.carttext{
+  padding-left:20px ;
+  margin-top:50px; 
+}
+#labcart{
+  margin-left: 0;
+ }
+.allpro a{
+  font-weight: bold;
+}
+.abt{
+  height: 300px;
+}
+.navbar-brand{
+  margin-left: 0;
+  
+ }
+ .nav-links{
+   margin-left: 0!important;
+   padding-left: 0!important;
+}
+#bt{
+  margin-left: 75px;
+}
+.d-log2{
+  width: 60% !important;
+  padding-top: 50px !important;
+}
+.btn-ok{
+  padding: 10px 20px !important;
+   background-color: black !important;
+   color: white !important;
+   margin-top: 0 !important;
+}
+ }
+ @media screen and (min-width: 769px) and (max-width: 1200px){
+   .abt{
+     height: 500px;
+   }
+   .cont1{
+    width: 75%;
+    margin-left:13%; 
+  }
+  .modal-dialog {
+    max-width: 100% !important;
+    
+  }
+  .d-log2{
+  max-width: 60% !important;
+  padding-top: 50px !important;
+}
+.btn-ok{
+  padding: 10px 20px !important;
+   background-color: black !important;
+   color: white !important;
+   margin-top: 0 !important;
+}
+ }
